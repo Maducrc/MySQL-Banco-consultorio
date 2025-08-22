@@ -141,6 +141,12 @@ select*from especialidades;
 select*from medicos;
 select*from pacientes;
  
-alter table convenios add tipo varchar (15);
-update convenios set tipo = "Individual" where id_convenio = 3;
--- delete from convenios where id_convenio = 2; erro de chave vinculado a outra tabela -- 
+ALTER TABLE convenios ADD tipo varchar (15);
+UPDATE convenios SET tipo = "Individual" WHERE id_convenio = 3;
+-- SELECT * FROM especialidades WHERE especialidade = "Dermatologia"; -- 
+-- SELECT * FROM pacientes WHERE nome_paciente = "Patrícia Lima"; -- 
+-- SELECT * FROM pacientes WHERE nome_paciente != "Patricia Lima"; -- 
+-- SELECT * FROM pacientes WHERE cpf > "555.666.777-88"; --
+-- SELECT * FROM pacientes WHERE nome_paciente <= "Carolina Azevedo"; --
+-- UPDATE medicos SET telefone = "(11) 12345-6789" where id_medico = 10; -- 
+-- DELETE FROM convenios WHERE id_convenio = 2; erro de chave vinculado a outra tabela -- 
