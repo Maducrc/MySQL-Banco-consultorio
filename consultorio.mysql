@@ -144,9 +144,17 @@ select*from pacientes;
 ALTER TABLE convenios ADD tipo varchar (15);
 UPDATE convenios SET tipo = "Individual" WHERE id_convenio = 3;
 -- SELECT * FROM especialidades WHERE especialidade = "Dermatologia"; -- 
--- SELECT * FROM pacientes WHERE nome_paciente = "Patrícia Lima"; -- 
+-- SELECT * FROM pacientes WHERE nome_paciente = "Patrícia Lima";  --
 -- SELECT * FROM pacientes WHERE nome_paciente != "Patricia Lima"; -- 
 -- SELECT * FROM pacientes WHERE cpf > "555.666.777-88"; --
 -- SELECT * FROM pacientes WHERE nome_paciente <= "Carolina Azevedo"; --
 -- UPDATE medicos SET telefone = "(11) 12345-6789" where id_medico = 10; -- 
--- DELETE FROM convenios WHERE id_convenio = 2; erro de chave vinculado a outra tabela -- 
+-- DELETE FROM convenios WHERE id_convenio = 2; erro de chave vinculado a outra tabela; -- 
+-- SELECT * FROM pacientes WHERE data_nascimento BETWEEN "1977-04-19" AND "1989-08-11"; --
+-- SELECT * FROM pacientes WHERE data_nascimento NOT BETWEEN "1977-04-19" AND "1989-08-11"; --
+-- SELECT * FROM pacientes WHERE nome_paciente LIKE "P%"; -- 
+-- SELECT * FROM pacientes WHERE nome_paciente NOT LIKE "P%"; -- 
+-- SELECT * FROM pacientes WHERE data_nascimento IN ("1990-07-25", "1980-06-06", "1996-11-01"); --
+-- SELECT * FROM pacientes WHERE data_nascimento NOT IN ("1990-07-25", "1980-06-06", "1996-11-01"); --
+-- SELECT * FROM pacientes WHERE data_nascimento <= "1992-02-02" AND nome_paciente LIKE "L%"; --
+
