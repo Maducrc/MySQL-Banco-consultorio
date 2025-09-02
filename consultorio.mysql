@@ -157,4 +157,5 @@ UPDATE convenios SET tipo = "Individual" WHERE id_convenio = 3;
 -- SELECT * FROM pacientes WHERE data_nascimento IN ("1990-07-25", "1980-06-06", "1996-11-01"); --
 -- SELECT * FROM pacientes WHERE data_nascimento NOT IN ("1990-07-25", "1980-06-06", "1996-11-01"); --
 -- SELECT * FROM pacientes WHERE data_nascimento <= "1992-02-02" AND nome_paciente LIKE "L%"; --
-
+-- select * from pacientes where data_nascimento >= '2005-12-12' or nome_paciente like 'Z%'; -- OR
+-- select * from pacientes where data_nascimento <= '1995-05-20' xor nome_paciente like 'A%'; -- XOR (faz a função de um "or not like")
