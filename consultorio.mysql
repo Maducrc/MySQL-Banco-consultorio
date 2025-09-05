@@ -132,7 +132,57 @@ INSERT INTO pacientes (nome_paciente, data_nascimento, sexo, cpf, telefone, emai
 ('Rogério Melo', '1978-03-08', 'M', '808.909.010-11', '(91) 98909-0111', 'rogerio.melo@email.com', 'Rua das Hortênsias', '147', 'Nazaré', 'Belém', '66020-000', 'PA', 3, 'MC028'),
 ('Simone Carvalho', '1986-01-25', 'F', '909.010.121-22', '(11) 99010-1222', 'simone.carvalho@email.com', 'Rua das Magnólias', '258', 'Centro', 'São Paulo', '01040-000', 'SP', 4, 'BE029'),
 ('Pedro Henrique', '1990-11-19', 'M', '010.121.232-33', '(21) 90121-2333', 'pedro.henrique@email.com', 'Rua das Orquídeas', '369', 'Copacabana', 'Rio de Janeiro', '22010-000', 'RJ', 5, 'CV030');
- 
+
+INSERT INTO consultas (id_paciente, nome_paciente, id_medico, nome_medico, id_convenio, nome_convenio, data_consulta, motivo, observacoes, valor)
+VALUES
+(19, 'Tatiane Silva', 9, 'Dr. Lucas Andrade', 4, 'BemEstar', '2025-09-25 15:00:00', 'Torcicolo', 'Massagens recomendadas', NULL),
+(20, 'Diego Martins', 10, 'Dra. Beatriz Gomes', 5, 'ClinVida', '2025-09-26 08:00:00', 'Revisão anual', 'Exames solicitados', NULL),
+(1, 'Maria Oliveira', 1, 'Dr. Carlos Silva', NULL, NULL, '2025-09-05 10:00:00', 'Dor no peito', 'Paciente relatou dor leve', 350.00),
+(2, 'João Santos', 2, 'Dra. Fernanda Souza', NULL, NULL, '2025-09-06 09:30:00', 'Febre e tosse', 'Prescrito antibiótico', 250.00),
+(22, 'Alexandre Rocha', 2, 'Dra. Fernanda Souza', 2, 'VidaMais', '2025-09-26 10:30:00', 'Infecção respiratória', 'Uso de máscara indicado', NULL),
+(3, 'Fernanda Costa', 3, 'Dr. João Mendes', NULL, NULL, '2025-09-06 11:00:00', 'Manchas na pele', 'Solicitado exame dermatológico', 300.00),
+(17, 'Carolina Azevedo', 7, 'Dr. Felipe Torres', 2, 'VidaMais', '2025-09-25 11:00:00', 'Dor de ouvido', 'Antibiótico prescrito', NULL),
+(29, 'Simone Carvalho', 9, 'Dr. Lucas Andrade', 4, 'BemEstar', '2025-09-27 15:00:00', 'Avaliação da coluna', 'Boa recuperação', NULL),
+(30, 'Pedro Henrique', 10, 'Dra. Beatriz Gomes', 5, 'ClinVida', '2025-09-28 08:00:00', 'Consulta de rotina', 'Tudo normal', NULL),
+(4, 'Carlos Pereira', 4, 'Dra. Patrícia Lima', NULL, NULL, '2025-09-07 14:00:00', 'Dor no joelho', 'Paciente precisa de raio-X', 400.00),
+(26, 'Thiago Araújo', 6, 'Dra. Marina Rocha', 1, 'Saúde Total', '2025-09-27 09:45:00', 'Avaliação de pressão', 'Controle adequado', NULL),
+(27, 'Luciana Fernandes', 7, 'Dr. Felipe Torres', 2, 'VidaMais', '2025-09-27 11:00:00', 'Acompanhamento infantil', 'Sem queixas', NULL),
+(6, 'Lucas Almeida', 6, 'Dra. Marina Rocha', NULL, NULL, '2025-09-08 08:30:00', 'Pressão alta', 'Acompanhamento mensal', 200.00),
+(15, 'Vanessa Souza', 5, 'Dr. Ricardo Alves', 5, 'ClinVida', '2025-09-25 08:30:00', 'Check-up clínico', 'Estável', NULL),
+(16, 'Marcelo Dias', 6, 'Dra. Marina Rocha', 1, 'Saúde Total', '2025-09-25 09:45:00', 'Hipertensão', 'Medicação ajustada', NULL),
+(7, 'Patrícia Lima', 7, 'Dr. Felipe Torres', NULL, NULL, '2025-09-09 13:00:00', 'Tosse persistente', 'Medicação prescrita', 230.00),
+(8, 'André Ferreira', 8, 'Dra. Ana Paula', NULL, NULL, '2025-09-09 15:00:00', 'Coceira', 'Pomada prescrita', 180.00),
+(9, 'Camila Rocha', 9, 'Dr. Lucas Andrade', 4, 'BemEstar', '2025-09-23 14:30:00', 'Dor lombar', 'Fisioterapia sugerida', NULL),
+(10, 'Rafael Torres', 10, 'Dra. Beatriz Gomes', 5, 'ClinVida', '2025-09-24 08:00:00', 'Exame clínico', 'Paciente sem queixas', NULL),
+(1, 'Maria Oliveira', 1, 'Dr. Carlos Silva', 1, 'Saúde Total', '2025-09-22 08:00:00', 'Rotina anual', 'Paciente tranquila', NULL),
+(2, 'João Santos', 2, 'Dra. Fernanda Souza', 2, 'VidaMais', '2025-09-22 09:00:00', 'Tosse persistente', 'Receitado xarope', NULL),
+(9, 'Camila Rocha', 9, 'Dr. Lucas Andrade', NULL, NULL, '2025-09-10 10:30:00', 'Dor lombar', 'Encaminhado para fisioterapia', 320.00),
+(10, 'Rafael Torres', 10, 'Dra. Beatriz Gomes', NULL, NULL, '2025-09-10 12:00:00', 'Check-up anual', 'Boa saúde geral', 500.00),
+(28, 'Rogério Melo', 8, 'Dra. Ana Paula', 3, 'MedCare', '2025-09-27 13:30:00', 'Picada com coceira', 'Alergia leve', NULL),
+(11, 'Bianca Martins', 1, 'Dr. Carlos Silva', NULL, NULL, '2025-09-11 09:00:00', 'Palpitações', 'Exames solicitados', 290.00),
+(12, 'Eduardo Ramos', 2, 'Dra. Fernanda Souza', NULL, NULL, '2025-09-11 11:30:00', 'Gripe forte', 'Repouso e hidratação', 120.00),
+(13, 'Larissa Lima', 3, 'Dr. João Mendes', NULL, NULL, '2025-09-12 14:30:00', 'Acne severa', 'Tratamento a longo prazo', 400.00),
+(14, 'Felipe Gomes', 4, 'Dra. Patrícia Lima', NULL, NULL, '2025-09-12 16:00:00', 'Torção no tornozelo', 'Imobilização temporária', 450.00),
+(15, 'Vanessa Souza', 5, 'Dr. Ricardo Alves', NULL, NULL, '2025-09-13 10:15:00', 'Dor de cabeça frequente', 'Avaliação neurológica recomendada', 310.00),
+(16, 'Marcelo Dias', 6, 'Dra. Marina Rocha', NULL, NULL, '2025-09-13 13:45:00', 'Hipertensão', 'Acompanhamento contínuo', 275.00),
+(17, 'Carolina Azevedo', 7, 'Dr. Felipe Torres', NULL, NULL, '2025-09-14 08:00:00', 'Febre e mal-estar', 'Suspeita de virose', 180.00),
+(18, 'Rodrigo Nunes', 8, 'Dra. Ana Paula', NULL, NULL, '2025-09-14 09:45:00', 'Alergia de pele', 'Evitar alérgenos identificados', 220.00),
+(19, 'Tatiane Silva', 9, 'Dr. Lucas Andrade', NULL, NULL, '2025-09-15 11:00:00', 'Dor nas costas', 'Recomendado RPG', 330.00),
+(20, 'Diego Martins', 10, 'Dra. Beatriz Gomes', NULL, NULL, '2025-09-15 15:30:00', 'Exame clínico geral', 'Exames de sangue solicitados', 280.00),
+(23, 'Marina Souza', 3, 'Dr. João Mendes', 3, 'MedCare', '2025-09-26 13:00:00', 'Consulta dermatológica', 'Pomada recomendada', NULL),
+(24, 'Fernando Lopes', 4, 'Dra. Patrícia Lima', 4, 'BemEstar', '2025-09-26 14:15:00', 'Exame ortopédico', 'Movimentos limitados', NULL),
+(25, 'Daniela Martins', 5, 'Dr. Ricardo Alves', 5, 'ClinVida', '2025-09-27 08:30:00', 'Avaliação', 'Recomendado repouso', NULL),
+(6, 'Lucas Almeida', 6, 'Dra. Marina Rocha', 1, 'Saúde Total', '2025-09-23 09:30:00', 'Avaliação cardíaca', 'Pressão estável', NULL),
+(7, 'Patrícia Lima', 7, 'Dr. Felipe Torres', 2, 'VidaMais', '2025-09-23 10:45:00', 'Consulta infantil', 'Paciente com boa saúde', NULL),
+(8, 'André Ferreira', 8, 'Dra. Ana Paula', 3, 'MedCare', '2025-09-23 13:00:00', 'Irritação na pele', 'Pomada receitada', NULL),
+(11, 'Bianca Martins', 1, 'Dr. Carlos Silva', 1, 'Saúde Total', '2025-09-24 09:20:00', 'Palpitações', 'Solicitado eletrocardiograma', NULL),
+(3, 'Fernanda Costa', 3, 'Dr. João Mendes', 3, 'MedCare', '2025-09-22 10:30:00', 'Problemas na pele', 'Possível dermatite', NULL),
+(4, 'Carlos Pereira', 4, 'Dra. Patrícia Lima', 4, 'BemEstar', '2025-09-22 11:45:00', 'Dor na perna', 'Exame de imagem solicitado', NULL),
+(5, 'Juliana Souza', 5, 'Dr. Ricardo Alves', 5, 'ClinVida', '2025-09-23 08:15:00', 'Acompanhamento', 'Sem alterações', NULL),
+(12, 'Eduardo Ramos', 2, 'Dra. Fernanda Souza', 2, 'VidaMais', '2025-09-24 10:40:00', 'Gripe forte', 'Repouso e hidratação', NULL),
+(13, 'Larissa Lima', 3, 'Dr. João Mendes', 3, 'MedCare', '2025-09-24 13:10:00', 'Consulta dermatológica', 'Alergia diagnosticada', NULL),
+(14, 'Felipe Gomes', 4, 'Dra. Patrícia Lima', 4, 'BemEstar', '2025-09-24 14:45:00', 'Joelho inflamado', 'Encaminhado para ortopedia', NULL);
+
 show tables;
  
 select*from consultas;
@@ -158,4 +208,12 @@ UPDATE convenios SET tipo = "Individual" WHERE id_convenio = 3;
 -- SELECT * FROM pacientes WHERE data_nascimento NOT IN ("1990-07-25", "1980-06-06", "1996-11-01"); --
 -- SELECT * FROM pacientes WHERE data_nascimento <= "1992-02-02" AND nome_paciente LIKE "L%"; --
 -- select * from pacientes where data_nascimento >= '2005-12-12' or nome_paciente like 'Z%'; -- OR
--- select * from pacientes where data_nascimento <= '1995-05-20' xor nome_paciente like 'A%'; -- XOR (faz a função de um "or not like")
+-- select * from pacientes where data_nascimento <= '1995-05-20' xor nome_paciente like 'A%'; -- XOR (faz a função de um "or not like") --
+
+-- SELECT COUNT(*) FROM consultas; 
+-- SELECT COUNT(nome_convenio) FROM consultas; 
+-- SELECT COUNT(Valor) FROM consultas; 
+-- SELECT SUM(Valor) FROM consultas; 
+-- SELECT AVG(Valor) FROM consultas;
+-- SELECT MAX(Valor) FROM consultas;
+-- SELECT MIN(Valor) FROM consultas;
