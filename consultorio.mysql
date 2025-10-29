@@ -217,3 +217,25 @@ UPDATE convenios SET tipo = "Individual" WHERE id_convenio = 3;
 -- SELECT AVG(Valor) FROM consultas;
 -- SELECT MAX(Valor) FROM consultas;
 -- SELECT MIN(Valor) FROM consultas;
+
+-- inner join
+SELECT 
+ consultas.id_consulta,
+ medicos.nome_medico,
+ consultas.data_consulta
+FROM consultas
+INNER JOIN medicos
+ ON consultas.id_medico = medicos.id_medico;
+ 
+-- create view
+ CREATE VIEW vw_pacientes_convenios AS 
+  SELECT 
+   p.id_paciente,
+   p.nome_paciente,
+   c.nome_convenio,
+   p.numero_carteirinha
+FROM pacientes p
+INNER JOIN convenios c 
+ ON p.id_convenio = c.id_convenio;
+ 
+SELECT*FROM vw_pacientes_convenios;
